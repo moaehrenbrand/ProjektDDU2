@@ -1,0 +1,45 @@
+.grid_number:hover {
+    background-color: plum !important;
+    cursor: pointer;
+}
+
+div.highlighted {
+    background-color: orchid !important;
+}
+
+div.removed {
+    background-color: rebeccapurple !important;
+}
+
+#randomNumber {
+    width: 50px;
+    border-radius: 2px;
+}
+
+#removeRandomNumber {
+    width: 150px;
+    border-radius: 2px;
+}
+
+#remove p {
+    background-color: white;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#newNumber {
+    padding: 5px;
+}
+
+#removeNumber {
+    padding: 5px;
+}
+
+#remove {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    gap: 5px;
+}
