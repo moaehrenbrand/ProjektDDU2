@@ -43,7 +43,7 @@ function newNumbers (n, fill) {
         div.style.justifyContent = "center";
 
         if (fill) {
-            div.textContent = randomNumber(1, 99);
+            div.textContent = randomNumber(0, 99);
         } else {
             div.textContent = "-";
         }
