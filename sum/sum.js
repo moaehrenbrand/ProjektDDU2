@@ -27,3 +27,30 @@ function updateMarkedSum() {
 
     document.getElementById("marked").textContent = sum;
 }
+
+document.getElementById("numbers").addEventListener("click", function(event) {
+    if (event.target.classList.contains("grid_number")) {
+        event.target.classList.toggle("marked");
+        if (event.target.classList.contains("marked")) {
+            event.target.style.backgroundColor = "orchid";
+        } else {
+            event.target.style.backgroundColor = "Lavender";
+        }
+        updateMarkedSum(); 
+    }
+});
+
+document.getElementById("buttons").addEventListener("click", function() {
+    const input = document.getElementById("inputone");
+    const n = input.value * 1;
+    newNumbers(n, true);
+});
+
+document.getElementById("Reset").addEventListener("click", function() {
+    const allDivs = document.querySelectorAll(".grid_number");
+    allDivs.forEach(function(div) {
+        div.classList.remove("marked");
+        div.style.backgroundColor = "Lavender";
+    });
+    document.getElementById("marked").textContent = " - ";
+});
