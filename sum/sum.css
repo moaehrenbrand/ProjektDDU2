@@ -1,0 +1,26 @@
+#sumOfAll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#sumOfMarked {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#marked, #all {
+    background-color: white;
+    border: 1px solid black;
+    margin: 0 5px;
+    width: 75px;
+    text-align: center;
+    padding: 5px;
+}
+
+#Reset {
+    padding: 5px;
+}
