@@ -1,0 +1,10 @@
+#findSame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#buttonReset {
+    padding: 5px;
+    margin: 20px 5px;
+}
