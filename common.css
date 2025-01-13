@@ -72,3 +72,11 @@ p {
     gap: 5px;
 
 }
+
+#links {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+    gap: 10px;
+}
