@@ -25,3 +25,50 @@ document.addEventListener("DOMContentLoaded", function () {
             value: +div.textContent.trim(),
             div: div
         }));
+
+        let foundPair = false;
+
+        for (let i = 0; i < numberValues.length; i++) {
+            for (let j = i + 1; j < numberValues.length; j++) {
+                if (numberValues[i].value + numberValues[j].value === targetSum &&
+                    !numberValues[i].div.classList.contains("marked") &&
+                    !numberValues[j].div.classList.contains("marked")) {
+
+                    numberValues[i].div.style.backgroundColor = "orchid";
+                    numberValues[j].div.style.backgroundColor = "orchid";
+
+                    numberValues[i].div.classList.add("marked");
+                    numberValues[j].div.classList.add("marked");
+
+                    lastPair = [numberValues[i].div, numberValues[j].div];
+
+                    foundPair = true;
+                    break;
+                }
+            }
+            if (foundPair) break;
+        }
+
+        if (!foundPair) {
+            alert("No more pairs found.");
+        }
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
