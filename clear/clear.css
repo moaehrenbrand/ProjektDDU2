@@ -1,0 +1,15 @@
+#buttonClear {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#buttonClear button {
+    padding: 5px;
+    margin: 20px 0;
+}
+
+.grid_number:hover {
+    cursor: pointer;
+}
