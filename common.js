@@ -1,5 +1,8 @@
 const inputDOM = document.querySelector("#inputone");
 
+let sidesDiv = document.querySelector(".sides");
+sidesDiv.innerHTML = '<a href="../common.html">Home</a>';
+
 const howManyDivs = document.createElement("p");
 howManyDivs.textContent = "How many numbers in the grid?";
 const headerElement = document.getElementById("header");
@@ -49,3 +52,4 @@ function newNumbers (n, fill) {
         }
     }
 };
+
